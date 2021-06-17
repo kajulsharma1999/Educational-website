@@ -5,28 +5,25 @@
 
     <style>
         #Form1 {
-            border: 2px;
+            border: 2px solid;
             padding: 10px;
             border-radius: 3px;
-            background-color: #333333;
-            color: #bcbcbc;
             margin: 50px 100px 100px 100px;
             width: auto;
+            background-color: #333333;
+            color: #bcbcbc;
         }
 
         .btn {
             background-color: #bcbcbc;
-
+            border: 2px solid #ffffff;
+            border-color: white;
             transition-duration: 0.4s;
         }
 
         .btn:hover {
             background-color: #eea412;
             color: white;
-        }
-
-        a {
-            color: #bcbcbc;
         }
     </style>
     <!-- Basic -->
@@ -85,8 +82,8 @@
                                 <a class="dropdown-item" href="course-grid-3.html">Course </a>
                             </div>
                         </li>
-                        <li class="nav-item "><a class="nav-link" href="teachers.html">Teachers</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="Student.html">Student</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="teachers.html">Teachers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Student.html">Student</a></li>
                         <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -99,7 +96,7 @@
 
     <div class="all-title-box">
         <div class="container text-center">
-            <h1>Students<span class="m_1">My Student</span></h1>
+            <h1>Teachers<span class="m_1">My teachers</span></h1>
         </div>
     </div>
 
@@ -107,27 +104,23 @@
         <div class="container">
             <div class="our-team">
 
-                <h1><b>Student SignUp</b></h1>
-                <form class="row g-3 " id="Form1" method="post" action="dbcon1.php">
+                <h1><b>Teacher SignUp</b></h1>
+                <form action="dbcon.php" method="POST" class="row g-3 " id="Form1">
                     <div class="col-md-6">
                         <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" name="firstName" class="form-control" id="First" required
-                            placeholder="First Name">
+                        <input type="text" name="firstName" class="form-control" id="First" required>
                     </div>
                     <div class="col-md-6">
                         <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" name="lastName" class="form-control" id="Second" required
-                            placeholder="Last Name">
+                        <input type="text" name="lastName" class="form-control" id="Second" required>
                     </div>
                     <div class="col-md-6">
                         <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" name="inputEmail" class="form-control" id="inputEmail4" required
-                            placeholder="Your Email">
+                        <input type="email" name="inputEmail" class="form-control" id="inputEmail4" required>
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" name="inputPassword" class="form-control" id="inputPassword4" required
-                            placeholder="Your Password ">
+                        <input type="password" name="password" class="form-control" id="inputPassword4" required>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Address</label>
@@ -141,8 +134,7 @@
                     </div>
                     <div class=" col-md-6">
                         <label for="inputCity" class="form-label">City</label>
-                        <input type="text" name="inputCity" class="form-control" id="inputCity" required
-                            placeholder=" Your City">
+                        <input type="text" name="inputCity" class="form-control" id="inputCity" required>
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">State</label><br>
@@ -169,12 +161,13 @@
                         </div>
                     </div><br>
                     <div class="col-12">
-                        <input type="submit" name="submit" class="btn " required>
+                        <input type="submit" name="submit" class="btn ">
                     </div><br><br>
 
                     <div class="col-12">
-                        <b>Already account ?</b> <a href="/edusite/KajulSharma/login1.php"> <b>Signin</a></b>
+                        <b>Already account ?</b> <a href="/edusite/KajulSharma/login.php"> <b>Signin</a></b>
                     </div>
+
                 </form>
 
             </div>
