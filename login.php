@@ -151,7 +151,7 @@
                             work with students of all ages and classes.</p>
                         <div class="footer-right">
                             <ul class="footer-links-soi">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
                             </ul><!-- end links -->
                         </div>
                     </div><!-- end clearfix -->
